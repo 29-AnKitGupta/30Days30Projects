@@ -8,4 +8,4 @@ Repo containing all the projects that i have made in 30 Days while i was  comple
 
 | # | Project | Live Demo |
 |:--|:--------|:----------|
-|1|[Exanding cards]()|
+|1|[Exanding cards](https://github.com/29-AnKitGupta/30Days30Projects/tree/main/expanding%20card)|[live Demo](https://ExpandingCards.kaafir.repl.co)|
