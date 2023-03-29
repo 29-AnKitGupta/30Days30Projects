@@ -1,0 +1,115 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2em;
+}
+main{
+    min-height: 100vh;
+    margin-top: 3rem;
+}
+h1{
+    text-align: center;
+    color: rgb(19, 19, 19);
+    font-size: 2em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 1em;
+}
+
+
+
+.img{
+    display: inline-block;
+    width:100px;
+    height: 500px;
+    background-color: aquamarine;
+    cursor: pointer;   
+    border-radius: 40px;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: flex-end;
+    padding:0 0 2rem 2rem;
+    text-transform: capitalize;
+    font-size: 1.35em;
+    box-shadow: 2px 2px 15px 5px rgba(0, 0,0, 0.4);
+    
+}
+
+.img h1{
+    opacity: 0;
+    font-size: 1em;
+    position: relative;
+    color: rgb(211, 204, 211);
+}
+
+.container .img:first-child{
+    background-image: url('https://source.unsplash.com/740x500/?nature');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .img:nth-child(2){
+    background-image: url('https://source.unsplash.com/740x500/?nature,sunset');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .img:nth-child(3){
+    background-image: url('https://source.unsplash.com/740x500/?mountain');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .img:nth-child(4){
+    background-image: url('https://source.unsplash.com/740x500/?sunset,nature');
+    background-position: center;
+    background-size: cover;
+}
+
+.container .img:nth-child(5){
+    background-image: url('https://source.unsplash.com/740x500/?sunset,nature,garden');
+    background-position: center;
+    background-size: cover;
+}
+.container .img:nth-child(6){
+    background-image: url('https://source.unsplash.com/740x500/?sunset,nature,ocean');
+    background-position: center;
+    background-size: cover;
+}
+
+/* logic part */
+
+.active:hover,.active{
+    width: 340px;
+}
+
+.img.active h1{
+    opacity: 1;
+}
+
+@media screen and (max-width:716px){
+   .container{
+      flex-direction: column;
+   } 
+   .img{
+      width: 250px;
+      height: 100px;
+    }
+    
+    .active:hover,.active{
+        height: 500px;
+        width: 250px;
+    }
+
+}
+
