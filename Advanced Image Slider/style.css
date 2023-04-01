@@ -1,0 +1,112 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+}
+
+/* general css styling */
+
+body{
+    min-height:85vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(28, 28, 57);
+    padding: 2rem;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(203, 204, 204);
+}
+
+.carousel{
+    position: relative;
+    width:1000px;
+    border: 5px solid rgb(182, 181, 181);
+    overflow: hidden;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.slider{
+    display: flex;
+    transition: transform 1s ease-in-out;
+    
+}
+
+.left-btn{
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 48%;
+    cursor: pointer;
+}
+.right-btn{
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 48%;
+    cursor: pointer;
+}
+
+.left-btn,.right-btn{
+    background-color: aliceblue;
+    border-radius:50%;
+    width: 30px;
+    height: 30px;
+}
+
+ul{
+    margin-top: 2rem;
+    list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 12px;
+}
+
+li{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: rgb(109, 112, 170);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* add class */
+.select{
+    background-color: aliceblue;
+}
+
+@media screen and (max-width:1024px){
+  .carousel{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:624px){
+
+  body{
+    justify-content: center;
+    gap:4rem;
+  }
+  .carousel{
+    width: 300px;
+  }
+  .left-btn,.right-btn{
+    width: 20px;
+    height:20px;
+  }
+  li{
+    width:10px;
+    height:10px;
+  }
+
+}
+
+
