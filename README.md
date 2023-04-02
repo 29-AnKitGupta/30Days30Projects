@@ -11,3 +11,4 @@ Repo containing all the projects that i have made in 30 Days while i was  comple
 |1|[Exanding cards](https://github.com/29-AnKitGupta/30Days30Projects/tree/main/expanding%20card)|[live Demo](https://ExpandingCards.kaafir.repl.co)|
 |2|[Clock](https://github.com/29-AnKitGupta/30Days30Projects/tree/main/Clock)|[Live Demo](https://Clock.kaafir.repl.co)|
 |3|[Advanced Image Slider](https://github.com/29-AnKitGupta/30Days30Projects/tree/main/Advanced%20Image%20Slider)|[Live Demo](https://Image-Carousel.kaafir.repl.co)|
+|4|[Stopwatch](https://github.com/29-AnKitGupta/30Days30Projects/tree/main/stopwatch)|[Live Demo](https://stopwatch.kaafir.repl.co)|
