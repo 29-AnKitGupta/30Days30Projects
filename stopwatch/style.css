@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Inter:wght@300;400&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    margin-bottom: 2rem;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(27, 27, 57);
+    text-transform: capitalize;
+    color: rgb(174, 175, 176);
+    font-family: 'Dosis', sans-serif;
+    padding: 2em;
+
+}
+.container{
+    background-color: rgba(108, 105, 105, 0.615);
+    padding: 3rem 4rem 1rem 4rem;
+    text-align: center;
+    border-radius: 28px;
+    font-size: 36px;
+    margin: 0.5rem 0 0 0;
+}
+.time{
+    color: rgb(188, 188, 188);
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    padding: 9px 32px;
+    margin: 2rem 0.3rem;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    background-color: rgb(53, 4, 88);
+    color: rgb(174, 175, 176);
+    transition: 0.3s;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+button:active, button:hover{
+    color: rgba(57, 5, 84, 0.519);
+    background-color: rgb(174, 175, 176);   
+    transition: 0.3s;
+    cursor: pointer;
+}
