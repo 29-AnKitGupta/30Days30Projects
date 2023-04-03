@@ -1,0 +1,192 @@
+*,*::after,*{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    
+}
+
+h1{
+    text-transform: uppercase;
+    color: rgb(153, 153, 150);
+    font-size: 2em;
+}
+.toggle-btn{
+    width: 40px;
+    height: 19px;
+    position: fixed;
+    top: 1.25em;
+    right: 2em;
+    background-color: aliceblue;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-btn::after{
+    content: '';
+    position: absolute;
+    background-color: #272749;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 2px;
+    left: 3px;
+    transition: left 0.25s ease-in-out ;
+}
+
+.toggle-btn.change-mode::after{
+    background-color: black;
+    left: 22px;
+}
+
+body.change-mode{
+    background-image: linear-gradient( 120.6deg,  rgba(0,0,0,0.95) 15.2%, rgb(48, 49, 48) 238.9% );
+    transition: all 0.5s ease-in-out;
+}
+body{
+  padding: 4em;
+  min-height: 100vh;
+/*   background-image: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% ); */
+  background-color: #272749;
+    transition: all 0.5s ease-in-out;
+  display: grid;
+  place-items:center;
+}
+
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:6rem;
+/*      */
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+
+
+.cell{
+    width: 100px;
+    height: 100px;
+    border:1px solid rgb(219, 220, 222); 
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+
+.cell:nth-child(3n+3){
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom: none;
+}
+
+.cell.x::before,
+.cell.x::after{
+    content: '';
+    width: 10px;
+    height: 60px ;
+    background-color:#f5f0f0;
+    position: absolute;
+}
+
+.cell.x::after{
+    transform: rotate(45deg);
+}
+
+.cell.x::before{
+    transform: rotate(-45deg);
+}
+
+.cell.o::before,
+.cell.o::after{
+    content: '';
+    width: 60px;
+    height: 60px ;
+    background-color: #f5f0f0;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.cell.o::after{
+    width: 50px;
+    height: 50px;
+    background-color:  rgba(113, 24, 202);
+}
+
+.x,.c:hover,
+.x,.c:focus,
+.o,.c:hover,
+.o,.c:focus{
+    cursor: not-allowed;
+}
+
+.message{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.5rem);
+    display: grid;
+    place-content: center;
+    gap: 1.25em;
+    display: none;
+    transition: all 0.5s ease-in;
+}
+
+p{
+    color: rgb(241, 237, 241);
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+button{
+    text-transform:capitalize;
+    padding: 0.6em;
+    background-color: rgb(108, 149, 24);
+    color: rgb(12, 1, 1);
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.25em;
+    border-radius: 120px;
+    outline: none;
+    transition:background-color 0.3s ease-in-out;
+}
+
+button:hover,
+button:focus{
+    background-color: white;
+    color: rgb(38, 54, 7);
+}
+
+.message.active{
+    display: grid;
+}
+
+
+
+
+
